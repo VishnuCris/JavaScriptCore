@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(){
-	let div = document.getElementById('divHome');
+	let div = document.getElementById('Home');
 	console.log(div.style);
 	setTimeout(function(){
 		div.style.backgroundColor = 'grey'
