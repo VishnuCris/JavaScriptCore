@@ -4,31 +4,38 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href = '../CSS/home.css' rel="stylesheet">
+	<link href = '../CSS/Dom.css' rel="stylesheet">
 	<script type="text/javascript" src="../JS/libraries/jQuery.js"></script>
 	<script type="text/javascript" src="../JS/Dom.js" defer></script>
 </head>
 <body>
 	<div id="includeHomePage"></div>
-	<h3>Getting Started with DOM Elements</h3>
-	<b>NAME : <i></i></b>
-	<b>AGE : <i></i></b>
-	<form class="Displayflex" id="form1">
+	<h4>Form submission <i>(Only js i.e,data saved temprarly if we reload then data erases)</i></h4>
+	<form class="Displayflex" id="form1" autocomplete="off">
 		<div>
+			<label>Name
 			<input type="text" name="name" id='name'/>
+			</label>
 		</div>
 		<div style="margin-left: 5px;">
-			<input type="number" name="age" id='age'/>
+			<label>Age
+				<input type="number" name="age" id='age'/>
+			</label>	
 		</div>	
 		<div style="margin-left: 5px;">
 			<input type="submit" value="submit" id="button1"/>
 		</div>	
-	</form>
-	<!-- <script type="text/javascript">
-		let form = document.getElementById('form1');
-		form.addEventListener('submit',function(e){
-			e.preventDefault();
-			alert('vichu');
-		});
-	</script> -->
+	</form><br/>
+	<table id="table1">
+		<thead>
+			<tr>
+				<td>NAME</td>
+				<td>AGE</td>
+				<td>ACTION</td>
+			</tr>	
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
 </body>
 </html>
