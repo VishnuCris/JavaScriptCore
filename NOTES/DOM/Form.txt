@@ -2,3 +2,4 @@ Learned objectives:
 	1.We cannot implement onclick on tag level inside the DOMContentLoaded function in javascript.
 	2.If a button was dynamically created (in case of no datatbase ie,temperary save ) then we cannot use addEventlistener because at the time of document load the button was not in the document so it results null.
 	3.If we use the same html file in multiple pages we have to load in places where we want it.For that we need our file to be served under a server.
+	4.We can use python Http Server to handle the scenario in step 3.

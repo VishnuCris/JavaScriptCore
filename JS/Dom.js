@@ -1,4 +1,4 @@
-// $("#includeHomePage").load("Home.html");
+$("#includeHomePage").load("../HTML/	Home.html");
 // $.ajax('../DATAS/sampleAjaxData.json',{
 // 	success:function(data) {
 // 		document.getElementsByTagName('i').textContent = data.name;	
