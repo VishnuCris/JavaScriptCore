@@ -1,4 +1,4 @@
-$("#includeHomePage").load("../HTML/	Home.html");
+$("#includeHomePage").load("../HTML/Home.html");
 // $.ajax('../DATAS/sampleAjaxData.json',{
 // 	success:function(data) {
 // 		document.getElementsByTagName('i').textContent = data.name;	
@@ -44,7 +44,7 @@ function insertData(data){
 	let cell2 = newRow.insertCell(1);
 	cell2.innerHTML = data.age;
 	let cell3 = newRow.insertCell(2);
-	cell3.innerHTML = `<button onClick = "editData(this)">Edit</button><button>Delete</button>`;
+	cell3.innerHTML = `<button onClick = "editData(this)">Edit</button>`;
 }
 function updateData(Data){
 	selectedRow.cells[0].textContent = Data.name;

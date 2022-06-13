@@ -9,3 +9,8 @@
 .cellWithBtn{
 	padding: 5px;
 }
+.contentScroll{
+	width: 50%;
+	height: 20%;
+	overflow-y: scroll;
+}
