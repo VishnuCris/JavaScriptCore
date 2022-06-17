@@ -3,39 +3,29 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href = '../CSS/home.css' rel="stylesheet">
-	<link href = '../CSS/Dom.css' rel="stylesheet">
 	<script type="text/javascript" src="../JS/libraries/jQuery.js"></script>
 	<script type="text/javascript" src="../JS/Dom.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="../CSS/Dom.css">
+	<title></title>
 </head>
 <body>
 	<div id="includeHomePage"></div>
-	<h4>Form submission <i>(Only js i.e,data saved temprarly if we reload then data erases)</i></h4>
-	<form class="Displayflex" id="form1" autocomplete="off">
-		<div>
-			<label>Name
-			<input type="text" name="name" id='name'/>
-			</label>
-		</div>
-		<div style="margin-left: 5px;">
-			<label>Age
-				<input type="number" name="age" id='age'/>
-			</label>	
-		</div>	
-		<div style="margin-left: 5px;">
-			<input type="submit" value="submit" id="button1"/>
-		</div>	
-	</form><br/>
-	<table id="table1">
-		<thead>
-			<tr>
-				<td>NAME</td>
-				<td>AGE</td>
-				<td>ACTION</td>
-			</tr>	
-		</thead>
-		<tbody>
-		</tbody>
-	</table></br>
+	<h3>Event listerners</h3>
+	<button onclick="location.reload()">Reset</button>
+	<h4>Drag the ball</h4>
+	<div id="field">
+    	<img src="https://en.js.cx/clipart/ball.svg" id="ball"> 
+	</div>
+	<h4>Invisible on click</h4>
+	<button onclick="this.hidden=true">Click me I'm Become Invisible</button>
+	<h4>Toogle Menu</h4>
+	<div id="sweeties" class="menu">
+		<span class="title">Sweeties (click me)!</span>
+	    <ul>
+	      <li>Cake</li>
+	      <li>Donut</li>
+	      <li>Honey</li>
+	    </ul>	
+	</div>
 </body>
 </html>

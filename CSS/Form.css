@@ -1,0 +1,16 @@
+#table1{
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 50%;
+}
+#table1 td{
+	border: 1px solid black;
+}
+.cellWithBtn{
+	padding: 5px;
+}
+.contentScroll{
+	width: 50%;
+	height: 20%;
+	overflow-y: scroll;
+}
