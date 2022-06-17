@@ -1,0 +1,18 @@
+.inputCalc{
+	background-color: black;
+	color: white;
+	padding: 50px;
+}
+.calculatorTbl{
+	width: 50%;
+	border: 1px solid black;
+}
+.calculatorTbl td{
+	border: 1px solid black;
+	text-align: center;
+	cursor: pointer;
+}
+.calculatorTbl td:hover{
+	background-color: black;
+	color: white;
+}

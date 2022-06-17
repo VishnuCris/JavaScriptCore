@@ -22,18 +22,18 @@ h3{
 	background-color: red;	
 }*/
 div .marginLeft5{}
-a{
-	background-color:black;
-	color: green;
-	text-decoration: none;
-	padding: 10px;
-	/*position: absolute;	*/
-}
+
 .marginLeft5{
 	/*padding: 5px;*/
 	padding-top: 10px;
 }
-a:hover{
+.homeBtn{
+	background-color:black;
+	color: green;
+	text-decoration: none;
+	padding: 10px;
+}
+.homeBtn:hover{
 	background-color: green;
 	color: white;
 }
