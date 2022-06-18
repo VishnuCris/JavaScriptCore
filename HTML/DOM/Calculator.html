@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="../../JS/DOM/Calculator.js"></script>
+	<script type="text/javascript" src="../../JS/DOM/Calculator.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="../../CSS/DOM/calculator.css" />
 	<title>Simple Calculator</title>
 </head>
@@ -13,12 +13,12 @@
 		<thead>
 			<tr>
 				<td colspan='3'>Display</td>
-				<td>C</td>
+				<td id="clearCalcDisplay">C</td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td class="inputCalc" colspan="4"></td>
+				<td id="inputCalc" colspan="4"></td>
 			</tr>
 			<tr>
 				<td>7</td>
