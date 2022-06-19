@@ -1,4 +1,4 @@
-// $("#includeHomePage").load("../HTML/Home.html");
+// $("#includeHomePage").load("../HTML/Home.html" );
 let field = document.getElementById('field');
 field.addEventListener('click',function(){
 	let windowCordinates = this.getBoundingClientRect();

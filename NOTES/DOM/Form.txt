@@ -3,3 +3,12 @@ Learned objectives:
 	2.If a button was dynamically created (in case of no datatbase ie,temperary save ) then we cannot use addEventlistener because at the time of document load the button was not in the document so it results null.
 	3.If we use the same html file in multiple pages we have to load in places where we want it.For that we need our file to be served under a server.
 	4.We can use python Http Server to handle the scenario in step 3.
+	5.Use 'eval' function in javascript for calculating the equation.
+	6.try catch is used in case of events inside the event only.
+	7.for add css styles via javascript:
+		for single style : ele.style.property = 'value';
+		for multiple style : ele.cssText="prop1:val1;prop2:val2";
+	8.for adding class:
+		ele.classList.add('className');
+	9.for big article use main and article tags.
+	10.section tag.	
