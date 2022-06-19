@@ -1,18 +1,25 @@
-let table = document.getElementsByClassName('calculatorTbl');
+//getting the display
 let screen = document.getElementById("inputCalc");
-console.log(screen);
-let tableRows = table[0].rows;
-for(i=2;i<tableRows.length;i++){
-	let cells = tableRows[i].cells;
-	console.log(cells);
-	for(cell of cells){
-		cell.addEventListener('click',function(){
-			screen.append(this.innerHTML)
-			alert(this.innerHTML);
-		})	
-	}
+
+//function executed whern td is clicked
+function display(val){
+		screen.innerHTML+=val
 }
+let evaluate = document.getElementById('evaluate');
+
+//execute when (=) button is clicked
+try{
+	evaluate.addEventListener('click',function(){
+		let equation = screen.innerHTML;
+		let result = eval(equation);
+		screen.innerHTML = result;
+
+	})
+}catch(err){
+	alert('enter valid arguments');
+}	
+//clear screen implementation
 let clearBtn = document.getElementById('clearCalcDisplay');
 clearBtn.addEventListener('click',()=>{
 	screen.innerHTML='';
-});
+})	

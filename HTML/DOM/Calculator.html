@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="../../JS/DOM/Calculator.js" defer></script>
+	<script type="text/javascript" src="../../JS/DOM/Calculator.js" async></script>
 	<link rel="stylesheet" type="text/css" href="../../CSS/DOM/calculator.css" />
 	<title>Simple Calculator</title>
 </head>
@@ -21,28 +21,28 @@
 				<td id="inputCalc" colspan="4"></td>
 			</tr>
 			<tr>
-				<td>7</td>
-				<td>8</td>
-				<td>9</td>
-				<td>/</td>
+				<td onclick="display(7)">7</td>
+				<td onclick="display(8)">8</td>
+				<td onclick="display(9)">9</td>
+				<td onclick="display('/')">/</td>
 			</tr>
 			<tr>
-				<td>4</td>
-				<td>5</td>
-				<td>6</td>
-				<td>*</td>
+				<td onclick="display(4)">4</td>
+				<td onclick="display(5)">5</td>
+				<td onclick="display(6)">6</td>
+				<td onclick="display('*')">*</td>
 			</tr>
 			<tr>
-				<td>1</td>
-				<td>2</td>
-				<td>3</td>
-				<td>-</td>
+				<td onclick="display(1)">1</td>
+				<td onclick="display(2)">2</td>
+				<td onclick="display(3)">3</td>
+				<td onclick="display('-')">-</td>
 			</tr>
 			<tr>
-				<td>0</td>
-				<td>.</td>
-				<td>=</td>
-				<td>+</td>
+				<td onclick="display(0)">0</td>
+				<td onclick="display('.')">.</td>
+				<td id="evaluate">=</td>
+				<td onclick="display('+')">+</td>
 			</tr>
 		</tbody>	
 	</table>
