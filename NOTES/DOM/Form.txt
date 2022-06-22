@@ -11,4 +11,6 @@ Learned objectives:
 	8.for adding class:
 		ele.classList.add('className');
 	9.for big article use main and article tags.
-	10.section tag.	
+	10.section tag.
+	11.article tag is for seperating blogs.
+	12.main tag is unique for a documnet.	
