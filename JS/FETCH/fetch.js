@@ -51,3 +51,4 @@ function tableCreation(keys,messages){
 	// table.classList.add('fetchTable');
 	table.setAttribute('id','fetchTable');
 }
+export default displayResult;
