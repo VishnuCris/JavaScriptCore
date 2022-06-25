@@ -1,4 +1,7 @@
-1.post ,put,delete.
+1.post,put,delete.
 2.export/import.
-3.Request Body.
-4.Response Body.
+3.Make our own javascript json data which supports all methods.
+4.Request Body.
+5.Response Body.
+
+

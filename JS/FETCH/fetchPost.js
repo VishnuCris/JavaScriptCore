@@ -1,4 +1,4 @@
-// import {displayResult} from '../../JS/FETCh/fetch.js'
+import displayResult from '../../JS/FETCHModules/displayResultTableFormat.js'
 const title = document.getElementById('titlePost');
 const id = document.getElementById('idPost');
 const body = document.getElementById('bodyPost');
@@ -27,3 +27,4 @@ function postData(title,id){
 	.then(displayResult)
 	.catch(err => alert(err));
 }
+
