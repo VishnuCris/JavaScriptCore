@@ -1,4 +1,6 @@
 export default function displayResult(messages){
+	console.log(messages);
+	console.log(typeof(messages));
 	let keys =(messages.length>1) ? Object.keys(messages[0]) : Object.keys(messages);
 	let messagesLength = (messages.length>1) ? messages.length : 1;
 	let result = (messagesLength > 1) ? messages:objectArrayPushed(messages);
@@ -34,7 +36,7 @@ export function tableCreation(keys,messages,messagesLength){
 	table.setAttribute('id','fetchTable');
 }
 
-function objectArrayPushed(obj){
+export function objectArrayPushed(obj){
 	let arr = [];
 	arr.push(obj);
 	return arr;
