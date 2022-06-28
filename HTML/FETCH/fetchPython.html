@@ -4,9 +4,18 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="../../JS/FETCH/fetchPython.js" defer></script>
+	<link rel="stylesheet" type="text/css" href="../../CSS/FETCH/fetchPython.css">
 	<title>fetchPython</title>
 </head>
 <body>
-	<a href="#" id="pythonFetchBtn">Python Fetch</a>
+	<h4>Fetch Data From Flask Api</h4>
+	<h5>Get Request</h5>
+	<a href="#" id="pythonFetchBtn" class="pyBtns">Python Fetch</a>
+	<h6 id="getPyData"></h6>
+	<h5>Post Request</h5>
+	<form name="pythonPost">
+		<input type="text" name="textPy" id="textPy"/>
+		<input type="button" name="pyBtn" id="pyBtn" class="pyBtns" value="submit" />
+	</form>
 </body>
 </html>
