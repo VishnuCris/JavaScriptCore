@@ -1,29 +1,46 @@
-const pythonFetchBtn = document.getElementById('pythonFetchBtn');
+import displayMainResult from '../../JS/FETCHModules/mainTable.js'
 const myInitGet = {method : 'GET',header:{'content-type':'application/json','Accept': 'application/json'},mode:'no-cors',cache:'default'};
-const myInitPost = {method : 'POST',header:{'content-type':'application/json','Accept': 'application/json'},mode:'no-cors',cache:'default'};
+
+// const myRequest = new Request('flowers.jpg');
+const pythonFetchBtn = document.getElementById('pythonFetchBtn');
 pythonFetchBtn.addEventListener('click',()=>{
 	fetch('http://127.0.0.1:5000/',{myInitGet})
 	.then((res) => res.json())
-	.then(displayRsltInSpan)
+	.then(displayMainResult)
 	.catch(err => console.log(err));
 })
 
-const displayRsltInSpan = (res,id="getPyData")=>{
-	console.log(res)
-	let getPyData = document.querySelector('#'+id);
-	getPyData.innerHTML = res.message;
-}
-
 const postPyBtn = document.getElementById('pyBtn');
 postPyBtn.addEventListener('click',()=>{
-	const textPy = document.querySelector('#textPy');
-	let data = textPy.value;
+	const personId = document.querySelector('#PersonId').value;
+	const LastName = document.querySelector('#LastName').value;
+	const FirstName = document.querySelector('#FirstName').value;
+	const Address = document.querySelector('#Address').value;
+	const City = document.querySelector('#City').value;
+	let data = {'personId':personId,'LastName':LastName,'FirstName':FirstName,'Address':Address,'City':City};
 	postPyData(data);
 })
 
-function postPyData(data){
-	fetch('http://127.0.0.1:5000/post',{myInitPost})
-	.then((res) => res.json())
+const displayRsltInSpan = (responses,id="getPyData")=>{
+	let getPyData = document.querySelector('#'+id);
+	console.log(responses)
+	for(response of responses){	
+		console.log(response);
+		getPyData.innerHTML = response;
+	}
+}
+
+const postPyData = (data) => {
+	console.log(data);
+	const myInit = {
+		method:'POST',
+		headers : {
+			'content-type':'application/json',
+		},
+		body:JSON.stringify({'data':data})
+	}
+	fetch('http://127.0.0.1:5000/postPrsn',myInit)
+	.then(response => response.json())
 	.then(displayRsltInSpan)
-	.catch((err)=>console.log(err));
+	.catch(err => alert(err));
 }
