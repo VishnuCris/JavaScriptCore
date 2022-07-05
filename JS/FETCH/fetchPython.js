@@ -23,15 +23,12 @@ postPyBtn.addEventListener('click',()=>{
 
 const displayRsltInSpan = (responses,id="getPyData")=>{
 	let getPyData = document.querySelector('#'+id);
-	console.log(responses)
-	for(response of responses){	
-		console.log(response);
+	for(let response of responses){	
 		getPyData.innerHTML = response;
 	}
 }
 
 const postPyData = (data) => {
-	console.log(data);
 	const myInit = {
 		method:'POST',
 		headers : {

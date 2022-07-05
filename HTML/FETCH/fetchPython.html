@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="module" src="../../JS/FETCH/fetchPython.js" defer></script>
+	<script type="module" src="../../JS/FETCH/fetchHeaders.js" defer></script>
 	<script type="module" src="../../JS/FETCHModules/mainTable.js" defer></script> 
 	<link rel="stylesheet" type="text/css" href="../../CSS/FETCH/fetchPython.css">
 	<title>fetchPython</title>
@@ -12,7 +13,6 @@
 	<h4>Fetch Data From Flask Api</h4>
 	<h5>Get Request</h5>
 	<a href="#" id="pythonFetchBtn" class="pyBtns">Python Fetch</a>
-	<h6 id="getPyData"></h6>
 	<h5>Post Request</h5>
 	<form name="pythonPost">
 		<input type="number" name="textPy" id="PersonId"/>
@@ -22,5 +22,8 @@
 		<input type="text" name="textPy" id="City"/>
 		<input type="button" name="pyBtn" id="pyBtn" class="pyBtns" value="submit" />
 	</form>
+	<h4>Fetch Headers</h4>
+	<a href="#" id="headerBtn" class="pyBtns">Header Fetch</a>
+	<h6 id="getPyData"></h6>
 </body>
 </html>

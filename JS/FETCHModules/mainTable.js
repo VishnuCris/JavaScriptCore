@@ -1,4 +1,5 @@
 export default function displayMainResult(data){
+	console.log(data)
 	let keys = data.response2;
 	let messages = data.response1;
 	let messagesLength = messages.length;
