@@ -1,5 +1,6 @@
 export default function displayMainResult(data){
 	console.log(data)
+	// console.log(res.tezt())
 	let keys = data.response2;
 	let messages = data.response1;
 	let messagesLength = messages.length;
